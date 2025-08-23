@@ -1,0 +1,81 @@
+/* css Document */
+@charset "UTF-8";
+
+/* configuraciones generales */
+
+@font-face {
+    font-family: "fira";
+    src: url(fuentes/firasans-regular.ttf) format(truetype);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "fira bold";
+    src: url(fuentes/firasans-bold.ttf) format(truetype);
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "fira italic";
+    src: url(fuentes/firasans-italic.ttf) format(truetype);
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "fira italic bold";
+    src: url(fuentes/firasans-boldItalic.ttf) format(truetype);
+    font-weight: bold;
+    font-style: italic;
+}
+
+* {
+    font-family: 'Fira Sans', sans-serif;
+}
+
+/* aca empiezan las aplicaciones */
+
+h1,
+h2,
+h3 {
+    font-family: 'Fira Sans', sans-serif;
+    color: rgb(202, 38, 147);
+    text-align: center;
+}
+
+h1 {
+    font-size: 3.2rem;
+    line-height: 1rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    color: rgb(129, 97, 158);
+}
+
+p {
+    text-wrap-style: balance;
+    text-align: center;
+    line-height: 1.7rem;
+}
+
+ul {
+    list-style: none;
+}
+
+.botonera {
+    background-color: red;
+    width: 1200 px;
+    height: 90 px;
+}
+
+#cabecera {
+    background-color: blue;
+    width: 1200px;
+    height: 400px;
+}
