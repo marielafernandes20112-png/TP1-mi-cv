@@ -33,7 +33,6 @@
 
 * {
     font-family: 'Fira Sans', sans-serif;
-    text-align: center;
     list-style: none;
     text-decoration: none;
     margin: 0;
@@ -45,6 +44,40 @@ body {
     background-color: rgb(190, 221, 221);
 }
 
+header {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    background: beige;
+}
+
+nav {
+    display: flex;
+    gap: 30px;
+}
+
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contenedor {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100vw;
+    max-width: 1200px;
+}
+
 /* aca empiezan las aplicaciones */
 
 h1,
@@ -52,7 +85,6 @@ h2,
 h3 {
     font-family: 'Fira Sans', sans-serif;
     color: rgb(125 107 161);
-    text-align: center;
 }
 
 h1 {
@@ -68,64 +100,135 @@ h3 {
     color: #81619e;
 }
 
+h4 {
+    color: #81619e;
+    font-family: "fira italic";
+}
+
 p {
     text-wrap-style: balance;
-    text-align: center;
     line-height: 1.7rem;
 }
 
 #hero {
-    background-image: url(img/textura.jpg);
+    background-image: url(img/fotomarieconfondo.jpg);
     background-size: cover;
     background-position: center;
     height: 70vh;
     padding: 30px;
-    margin: 20px 0;
     border-top-width: 30px;
     border-bottom-width: 30px;
     border-left-width: 0;
     border-right-width: 0;
     border-color: purple;
     border-style: solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
 }
 
 #bienvenida {
     background-image: url(img/patron.png);
-    padding: 20px;
-    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 20px;
+    gap: 20px;
 }
 
-#gracias {
-    font-size: 2rem;
+blockquote {
+    font-size: 3rem;
     background: linear-gradient(132deg, #c6b8e2, transparent);
     padding: 20px;
     min-height: 20vh;
-    line-height: 2rem;
+    line-height: 3rem;
+    width: 100vw;
     max-width: 800px;
     margin: 30px 0;
     border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: mediumpurple;
 
     p {
-        linr-height: 2rem
+        line-height: 2rem
     }
 }
 
-/*#gracias p {
-    line-height: 2rem;
-}*/
 
 ul {
     list-style: none;
 }
 
-/*.botonera {
-    background-color: rgb(62, 116, 133);
-    width: 1200px;
-    height: 90px;
-}*/
+#experiencia {
+    article {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        padding: 30px;
+        flex-wrap: wrap;
 
-#cabecera {
-    background-color: rgb(190, 216, 212);
-    width: 1200px;
-    height: 150px;
+        p {
+            text-wrap: pretty;
+        }
+
+        div {
+            max-width: 550px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            min-width: 410px;
+        }
+    }
+}
+
+#estudios {
+    article {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        padding: 30px;
+        flex-wrap: wrap;
+
+        p {
+            text-wrap: pretty;
+        }
+
+        div {
+            max-width: 550px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            min-width: 410px;
+        }
+    }
+}
+
+#hobbys {
+    article {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        padding: 30px;
+        flex-wrap: wrap;
+
+        p {
+            text-wrap: pretty;
+        }
+
+        div {
+            max-width: 550px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            min-width: 410px;
+        }
+    }
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
