@@ -56,7 +56,6 @@ nav {
     gap: 30px;
 }
 
-
 main {
     display: flex;
     flex-direction: column;
@@ -77,9 +76,7 @@ section {
     width: 100vw;
     max-width: 1200px;
 }
-
 /* aca empiezan las aplicaciones */
-
 h1,
 h2,
 h3 {
@@ -88,12 +85,11 @@ h3 {
 }
 
 h1 {
-    font-size: 3.2rem;
-    /*line-height: 1rem;*/
+    font-size: 2rem;
 }
 
 h2 {
-    font-size: 2rem;
+    font-size: 1,6rem;
 }
 
 h3 {
@@ -137,7 +133,7 @@ p {
 }
 
 blockquote {
-    font-size: 3rem;
+    font-size: 2rem;
     background: linear-gradient(132deg, #c6b8e2, transparent);
     padding: 20px;
     min-height: 20vh;
@@ -156,79 +152,51 @@ blockquote {
     }
 }
 
-
 ul {
     list-style: none;
 }
 
+#contacto {
+    padding: 30px;
+    flex-wrap: wrap;
+    flex-direction: column;
+    line-height: 2rem;
+    background: #ddd0eb;
+    margin: 20px;
+    border: 6px solid purple;
+}
+
 #experiencia {
-    article {
-        display: flex;
-        justify-content: center;
-        gap: 30px;
-        padding: 30px;
-        flex-wrap: wrap;
-
-        p {
-            text-wrap: pretty;
-        }
-
-        div {
-            max-width: 550px;
-            display: flex;
-            flex-direction: column;
-            gap: 15px;
-            min-width: 410px;
-        }
-    }
+    max-width: 550px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 30px;
+    flex-wrap: wrap;
+    flex-direction: column;
+    min-width: 410px;
+    line-height: 2rem;
 }
 
-#estudios {
-    article {
-        display: flex;
-        justify-content: center;
-        gap: 30px;
-        padding: 30px;
-        flex-wrap: wrap;
-
-        p {
-            text-wrap: pretty;
-        }
-
-        div {
-            max-width: 550px;
-            display: flex;
-            flex-direction: column;
-            gap: 15px;
-            min-width: 410px;
-        }
-    }
+#trabajos {
+    gap: 30px;
 }
 
-#hobbys {
-    article {
-        display: flex;
-        justify-content: center;
-        gap: 30px;
-        padding: 30px;
-        flex-wrap: wrap;
-
-        p {
-            text-wrap: pretty;
-        }
-
-        div {
-            max-width: 550px;
-            display: flex;
-            flex-direction: column;
-            gap: 15px;
-            min-width: 410px;
-        }
-    }
+p {
+    text-wrap: pretty;
 }
 
 footer {
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 20px;
 }
+
+#redes {
+    display: flex;
+    gap: 40px;
+}
+
+
+
