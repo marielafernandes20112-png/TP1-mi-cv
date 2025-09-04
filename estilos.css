@@ -41,7 +41,7 @@
 }
 
 body {
-    background-color: rgb(190, 221, 221);
+    background-color: rgb(245, 223, 245);
 }
 
 header {
@@ -76,6 +76,7 @@ section {
     width: 100vw;
     max-width: 1200px;
 }
+
 /* aca empiezan las aplicaciones */
 h1,
 h2,
@@ -89,7 +90,7 @@ h1 {
 }
 
 h2 {
-    font-size: 1,6rem;
+    font-size: 1, 6rem;
 }
 
 h3 {
@@ -107,27 +108,16 @@ p {
 }
 
 #hero {
-    background-image: url(img/fotomarieconfondo.jpg);
     background-size: cover;
     background-position: center;
-    height: 70vh;
     padding: 30px;
-    border-top-width: 30px;
-    border-bottom-width: 30px;
-    border-left-width: 0;
-    border-right-width: 0;
+    border-width: 30px 0 30px 0;
     border-color: purple;
     border-style: solid;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
 }
 
 #bienvenida {
     background-image: url(img/patron.png);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     padding: 60px 20px;
     gap: 20px;
 }
@@ -159,7 +149,6 @@ ul {
 #contacto {
     padding: 30px;
     flex-wrap: wrap;
-    flex-direction: column;
     line-height: 2rem;
     background: #ddd0eb;
     margin: 20px;
@@ -168,22 +157,16 @@ ul {
 
 #experiencia {
     max-width: 550px;
-    display: flex;
     justify-content: center;
     gap: 30px;
     padding: 30px;
     flex-wrap: wrap;
-    flex-direction: column;
     min-width: 410px;
     line-height: 2rem;
 }
 
 #trabajos {
     gap: 30px;
-}
-
-p {
-    text-wrap: pretty;
 }
 
 footer {
@@ -197,6 +180,3 @@ footer {
     display: flex;
     gap: 40px;
 }
-
-
-
