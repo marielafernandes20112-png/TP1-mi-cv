@@ -184,8 +184,6 @@ p {
     gap: 10px;
 }
 
-.fotomarie {}
-
 .boton-bienvenida {
     border: none;
     font-size: 26px;
@@ -220,8 +218,6 @@ p {
     align-self: stretch;
     overflow: hidden;
 }
-
-.item {}
 
 .footer {
     display: flex;
