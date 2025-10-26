@@ -334,6 +334,158 @@ button {
     gap: 30px;
 }
 
+/*section datos*/
+
+.proyectos {
+    display: flex;
+    flex-direction: column;
+    padding: 139px 0;
+    justify-content: center;
+    gap: 80px;
+}
+
+.proyectos-contenido {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 80px;
+}
+
+.proyectosizq {
+    display: flex;
+    width: 650px;
+    height: 1610px;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+
+.boton-proyectos {
+    display: flex;
+    height: 65px;
+    padding: 18px 52px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 60px;
+    background: var(--Cian, #61D5D8);
+}
+
+.cantante {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    align-self: stretch;
+}
+
+.boton-cantante {
+    display: flex;
+    width: 300px;
+    height: 65px;
+    padding: 18px 52px;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    border-radius: 60px;
+    background: var(--fucsia, #C157A2);
+}
+
+.arianaboton {
+    display: flex;
+    gap: 50px;
+    flex-direction: column;
+}
+
+.baile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    align-self: stretch;
+    padding: 140px;
+}
+
+/*porfolio*/
+
+#titulo {
+    display: flex;
+    padding: 57px 0;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+#proyectos {
+    display: flex;
+    width: 1755px;
+    flex-direction: column;
+    align-items: center;
+    gap: 179px;
+}
+
+.comojugabamos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 59px;
+}
+
+.fotosjuegos {
+    display: flex;
+    width: 1180px;
+    align-items: flex-start;
+    align-content: flex-start;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.libros {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 79px;
+}
+
+.fotoslibros {
+    display: flex;
+    align-items: flex-start;
+    align-content: flex-start;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.vueltauniverso {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 65px;
+}
+
+.fotosuniverso {
+    display: flex;
+    align-items: flex-start;
+    align-content: flex-start;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+/*videos*/
+
+.algunosvideos {
+    display: flex;
+    width: 1536px;
+    padding: 56px 0;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.videos {
+    display: flex;
+    align-items: flex-end;
+    gap: 10px;
+}
+
 /*footer*/
 .footer {
     display: flex;
