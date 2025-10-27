@@ -21,33 +21,36 @@
     </header>
 
     <main>
-        <div class="izquierda">
-            <h1>Podés escribirme</h1>
-            <p>Decime que te gustó más</p>
-        </div>
-
-        <form method="post" action="" target="_blank" enctype="multipart/form-data" class="formulario">
-            <div class="datos-persona">
-                <div class="nombre">
-                    <label for="nombre">
-                        <h5 class="bold">nombre</h5>
-                    </label>
-                    <input type="text" name="nombre" id="nombre" maxlength="30" required>
-                </div>
-                <div class="mail">
-                    <label for="mail">
-                        <h5 class="bold">mail</h5>
-                    </label>
-                    <input type="email" name="mail" id="email" required>
-                </div>
-                <div class="mensaje">
-                    <label for="mensaje">
-                        <h5 class="bold">mensaje</h5>
-                    </label>
-                    <textarea name="mensaje" id="mensaje" maxlength="700" required></textarea>
-                </div>
-                <input type="submit" class="boton-enviar" value="enviar">
-            </form>
+        <section id="formulario">
+            <div class="izquierda">
+                <h3>Podés escribirme</h3>
+                <p>Decime que te gustó más</p>
+            </div>
+            <article class="formularioderecha">
+                <form method="post" action="marielafernandes20112@gmail.com" target="_blank" enctype="multipart/form-data" class="formulario">
+                    <div class="datos-persona">
+                        <div class="nombre">
+                            <label for="nombre">
+                                <h5 class="bold">nombre</h5>
+                            </label>
+                            <input type="text" name="nombre" id="nombre" maxlength="30" required>
+                        </div>
+                        <div class="mail">
+                            <label for="mail">
+                                <h5 class="bold">mail</h5>
+                            </label>
+                            <input type="email" name="mail" id="email" required>
+                        </div>
+                        <div class="mensaje">
+                            <label for="mensaje">
+                                <h5 class="bold">mensaje</h5>
+                            </label>
+                            <textarea name="mensaje" id="mensaje" maxlength="700" required></textarea>
+                        </div>
+                        <input type="submit" class="boton-enviar" value="enviar">
+                    </div>
+                </form>
+            </article>
         </section>
     </main>
     <footer>
