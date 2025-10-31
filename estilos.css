@@ -39,8 +39,7 @@
 
 body {
     background: var(--amarillito, #F9FBEC);
-    width: 1920px;
-    flex-wrap: wrap;
+    max-width: 1920px;
     align-items: center;
 }
 
@@ -69,9 +68,6 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 0 auto;
-    width: 100%;
-    justify-content: flex-start;
 }
 
 a {
@@ -127,14 +123,6 @@ p {
     line-height: 1.7rem;
     max-width: 500px;
 }
-
-/*button {
-    border: none;
-    font-size: 26px;
-    font-weight: 700;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}*/
 
 
 header img:hover {
@@ -396,14 +384,12 @@ nav a:hover {
     display: flex;
     flex-direction: column;
     padding: 100px;
-    justify-content: center;
     gap: 80px;
 }
 
 .proyectos-contenido {
     display: flex;
     justify-content: center;
-    align-items: flex-start;
     gap: 80px;
 }
 
@@ -428,24 +414,20 @@ nav a:hover {
     font-weight: bold;
 }
 
+.proyectosizq img {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 10px;
+}
+
+.proyectosizq img:hover {
+    transform: scale(1.05);
+}
+
 .cantante {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 50px;
-    align-self: stretch;
-}
-
-.boton-cantante {
-    display: flex;
-    width: 300px;
-    height: 65px;
-    padding: 18px 52px;
-    justify-content: center;
-    align-items: center;
-    gap: 40px;
-    border-radius: 60px;
-    background: var(--fucsia, #C157A2);
 }
 
 .arianaboton {
@@ -459,82 +441,61 @@ nav a:hover {
     flex-direction: column;
     align-items: center;
     gap: 50px;
-    align-self: stretch;
-    padding: 140px;
+    padding: 80px;
 }
 
 /*porfolio*/
 
-#titulo {
+#titulocompleto {
     display: flex;
-    padding: 57px 0;
-    justify-content: center;
-    align-items: flex-start;
+    padding: 57px;
     gap: 40px;
 }
 
 #proyectos {
     display: flex;
-    width: 1755px;
     flex-direction: column;
-    align-items: center;
-    gap: 179px;
+    gap: 80px;
+    max-width: 1520px;
 }
 
 .comojugabamos {
     display: flex;
-    justify-content: center;
     align-items: center;
-    gap: 59px;
 }
 
-.fotosjuegos {
+.fotosproyectos {
     display: flex;
-    width: 1180px;
-    align-items: flex-start;
-    align-content: flex-start;
     gap: 40px;
     flex-wrap: wrap;
+}
+
+.fotosproyectos img:hover {
+    transform: scale(1.03);
+    transition: transform 0.3s ease;
+    cursor: pointer;
 }
 
 .libros {
     display: flex;
-    justify-content: center;
     align-items: center;
     gap: 79px;
 }
 
-.fotoslibros {
-    display: flex;
-    align-items: flex-start;
-    align-content: flex-start;
-    gap: 40px;
-    flex-wrap: wrap;
-}
-
 .vueltauniverso {
     display: flex;
-    justify-content: center;
     align-items: center;
     gap: 65px;
 }
 
-.fotosuniverso {
-    display: flex;
-    align-items: flex-start;
-    align-content: flex-start;
-    gap: 40px;
-    flex-wrap: wrap;
-}
 
 /*videos*/
 
 .algunosvideos {
     display: flex;
-    width: 1536px;
-    padding: 56px 0;
-    justify-content: center;
-    align-items: flex-start;
+    flex-direction: column-reverse;
+    padding: 56px;
+    gap: 60px;
 }
 
 .videos {
@@ -547,24 +508,25 @@ nav a:hover {
 
 #formulario {
     display: flex;
-    height: 1170px;
-    padding: 39px 0;
-    justify-content: center;
     align-items: center;
-    gap: 100px;
+    gap: 30px;
+    margin: 30px;
 }
+
+.izquierda {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+}
+
+
 
 .formularioderecha {
     display: flex;
-    width: 1106px;
-    padding: 51px 44px;
-    align-items: flex-start;
-    align-content: flex-start;
-    gap: 11px -19px;
-    flex-wrap: wrap;
     border-radius: 40px;
     border: 3px solid #000;
-    padding: 70px;
+    padding: 40px;
 }
 
 .nombre {
@@ -610,7 +572,7 @@ nav a:hover {
 .mail,
 .mensaje {
     margin-bottom: 25px;
-    gap: 10px;
+    gap: 20px;
 }
 
 input,
@@ -625,16 +587,9 @@ textarea {
 .boton-enviar {
     display: flex;
     height: 65px;
-    padding: 18px 52px;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
     border-radius: 60px;
     background: var(--Cian, #61D5D8);
-    margin-top: 20px;
-    width: 200px;
-    margin-top: 25px;
-    align-self: center;
+    max-width: 200px;
     font-weight: bold;
 }
 
@@ -693,7 +648,7 @@ footer {
         padding: 20px 15px;
         gap: 5px;
         border-radius: 20px;
-        max-width: 700px;
+        /*max-width: 700px;*/
     }
 
     header img {
@@ -727,24 +682,56 @@ footer {
         flex-direction: column;
     }
 
-    #bienvenida {
+    #comienzo {
+        display: flex;
         flex-direction: column;
-        text-align: center;
-        padding: 40px 20px;
-        gap: 30px;
-        height: auto;
-    }
-
-    .sobremi {
         align-items: center;
-        gap: 40px;
-        height: auto;
-        padding: 0;
+        text-align: center;
+        padding: 30px 15px;
     }
 
-    .fotomarie {
-        width: 30%;
+    #comienzo .nombrecomienzo {
+        margin-bottom: 20px;
+    }
+
+    #comienzo h1 {
+        font-size: 1.8rem;
+    }
+
+    #comienzo h2 {
+        font-size: 1.4rem;
+    }
+
+    #comienzo p {
+        font-size: 1rem;
+        max-width: 90%;
+        margin: 0 auto;
+    }
+
+    #comienzo img {
+        width: 80%;
         height: auto;
     }
+
+    
+#bienvenida {
+    flex-direction: column;
+    text-align: center;
+    padding: 40px 20px;
+    gap: 30px;
+    height: auto;
+}
+
+.sobremi {
+    align-items: center;
+    gap: 40px;
+    height: auto;
+    padding: 0;
+}
+
+.fotomarie {
+    width: 30%;
+    height: auto;
+}
 
 }
