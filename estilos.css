@@ -170,22 +170,17 @@ nav a:hover {
     padding: 60px;
     align-items: center;
     background: var(--Cian, #61D5D8);
-    max-width: 1920px;
+    border-radius: 30px;
 }
 
 .sobremi {
     padding: 0 38px;
-    flex-direction: column;
-    justify-content: center;
     align-items: flex-start;
-    gap: 85px;
 }
 
 .arriba {
     padding: 25px 0;
-    flex-direction: column;
     align-items: flex-start;
-    gap: 27px;
     color: var(--amarillito, #F9FBEC);
 }
 
@@ -199,8 +194,6 @@ nav a:hover {
 .boton-bienvenida {
     display: inline-block;
     padding: 18px 52px;
-    align-items: flex-end;
-    gap: 10px;
     border-radius: 60px;
     background: var(--amarillito, #F9FBEC);
     font-weight: bold;
@@ -222,8 +215,7 @@ nav a:hover {
 
 .boton-porfolio {
     display: flex;
-    width: 170px;
-    height: auto;
+    max-width: 170px;
     padding: 18px 52px;
     justify-content: center;
     border-radius: 60px;
@@ -279,31 +271,33 @@ nav a:hover {
 
 /*galeria paginas*/
 .cerrar {
-    padding: 30px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
 }
 
 .centrar {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    flex-direction: column;
+    padding: 30px;
 }
 
+.centrar img {
+    border-radius: 30px;
+}
 
 /*sobremi*/
-
 #introduccion {
     display: flex;
     max-width: 1300px;
     height: auto;
     padding: 43px;
     align-items: center;
-    gap: 100px;
+    gap: 30px;
 }
 
 .presentacion {
     display: flex;
-    max-width: 585px;
-    height: auto;
     flex-direction: column;
     gap: 21px;
     padding: 30px;
@@ -311,7 +305,6 @@ nav a:hover {
 
 .texto {
     display: flex;
-    height: 308px;
     flex-direction: column;
     align-items: flex-start;
 }
@@ -321,7 +314,6 @@ nav a:hover {
     justify-content: center;
     align-items: center;
     gap: 45px;
-    width: 100%;
 }
 
 .exp-laboral {
@@ -389,14 +381,10 @@ nav a:hover {
 
 .proyectos-contenido {
     display: flex;
-    justify-content: center;
-    gap: 80px;
 }
 
 .proyectosizq {
     display: flex;
-    width: 650px;
-    height: 1610px;
     flex-direction: column;
     align-items: center;
     gap: 50px;
@@ -404,11 +392,7 @@ nav a:hover {
 
 .boton-proyectos {
     display: flex;
-    height: 65px;
     padding: 18px 52px;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
     border-radius: 60px;
     background: var(--Cian, #61D5D8);
     font-weight: bold;
@@ -434,6 +418,18 @@ nav a:hover {
     display: flex;
     gap: 50px;
     flex-direction: column;
+}
+
+.arianaboton {
+    background-color: #b65f9c;
+    padding: 15px;
+    border-radius: 25px;
+    text-align: center;
+}
+
+.arianaboton audio {
+    width: 100%;
+    outline: none;
 }
 
 .baile {
@@ -531,7 +527,7 @@ nav a:hover {
 
 .nombre {
     display: flex;
-    width: 428px;
+    max-width: 428px;
     padding: 28px;
     align-items: center;
     border-radius: 16px;
@@ -541,7 +537,7 @@ nav a:hover {
 
 .mail {
     display: flex;
-    width: 529px;
+    max-width: 529px;
     padding: 28px;
     align-items: center;
     border-radius: 16px;
@@ -551,7 +547,7 @@ nav a:hover {
 
 .mensaje {
     display: flex;
-    width: 970px;
+    max-width: 970px;
     height: 318px;
     padding: 28px;
     align-items: flex-start;
@@ -596,11 +592,9 @@ textarea {
 /*footer*/
 footer {
     display: flex;
-    max-width: 1900px;
     padding: 25px 189px;
     justify-content: space-between;
     align-items: center;
-    gap: 271px;
     margin: 15px 20px;
 }
 
@@ -639,7 +633,6 @@ footer {
         padding: 20px 15px;
         gap: 5px;
         border-radius: 20px;
-        max-width: 1100px;
     }
 }
 
@@ -648,7 +641,6 @@ footer {
         padding: 20px 15px;
         gap: 5px;
         border-radius: 20px;
-        /*max-width: 700px;*/
     }
 
     header img {
@@ -674,8 +666,8 @@ footer {
 
     footer {
         border-radius: 20px;
-        max-width: 700px;
-        gap: 20px;
+        gap: 60px;
+        align-items: baseline;
     }
 
     .redes_footer {
@@ -713,25 +705,47 @@ footer {
         height: auto;
     }
 
-    
-#bienvenida {
-    flex-direction: column;
-    text-align: center;
-    padding: 40px 20px;
-    gap: 30px;
-    height: auto;
-}
 
-.sobremi {
-    align-items: center;
-    gap: 40px;
-    height: auto;
-    padding: 0;
-}
+    #bienvenida {
+        flex-direction: column;
+        text-align: center;
+        padding: 40px 20px;
+        gap: 30px;
+        height: auto;
+    }
 
-.fotomarie {
-    width: 30%;
-    height: auto;
-}
+    .sobremi {
+        align-items: center;
+        gap: 40px;
+        height: auto;
+        padding: 0;
+    }
+
+    .fotomarie {
+        width: 30%;
+        height: auto;
+    }
+
+    /*galeria abierta*/
+    .cerrar img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .centrar {
+        padding: 10px;
+    }
+
+    .centrar h1 {
+        font-size: 1.4rem;
+    }
+
+    .centrar h2 {
+        font-size: 1rem;
+    }
+
+    .centrar p {
+        font-size: 0.9rem;
+    }
 
 }
